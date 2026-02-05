@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes,Route} from 'react-router-dom';
 
-import Layout from './assets/Layouts/layout';
+import Layout from './Layouts/layout';
 
 import Accueil from './pages/Accueil';
 import Competences from './pages/competence';
