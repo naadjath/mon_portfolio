@@ -1,6 +1,5 @@
-import React from 'react';
-import NAVBAR from '../components/NAVBAR'; // Importe la NAVBAR qu'on a créée
-import Footer from '../components/Footer';
+import NAVBAR from '../../components/NAVBAR'; // Importe la NAVBAR qu'on a créée
+import Footer from '../../components/Footer';
 
 // ===== DÉFINITION DES TYPES =====
 // Le Layout reçoit maintenant 3 props au lieu d'une seule

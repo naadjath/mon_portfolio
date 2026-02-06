@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Layout from './Layouts/layout';
+import Layout from './assets/Layouts/layout';
 import Accueil from './pages/Accueil';
 import Competences from './pages/competence';
 import Realisation from './pages/realisation';
