@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 // import heroPng from "../assets/hero-girl.png"; // ← décommente quand tu as ton image
 
 interface HeroProps {

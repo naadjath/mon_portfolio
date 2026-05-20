@@ -9,8 +9,6 @@ import Competences from './pages/competence';
 import Realisation from './pages/realisation';
 import SoftSkill from './pages/softSkill';
 import Contact from './pages/contact';
-import NAVBAR from './components/NAVBAR';
-import Hero from './pages/hero';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
