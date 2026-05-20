@@ -1,7 +1,16 @@
+import React from 'react'
+import Hero from './hero'
 
-const Accueil = () => {
+interface AccueilProps {
+  darkMode?: boolean
+}
+
+const Accueil = ({ darkMode }: AccueilProps) => {
   return (
-    <div>Accueil</div>
+    <div>
+      <Hero darkMode={darkMode} />
+      {/* Tes autres sections ici */}
+    </div>
   )
 }
 

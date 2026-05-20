@@ -9,6 +9,8 @@ import Competences from './pages/competence';
 import Realisation from './pages/realisation';
 import SoftSkill from './pages/softSkill';
 import Contact from './pages/contact';
+import NAVBAR from './components/NAVBAR';
+import Hero from './pages/hero';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -37,14 +39,26 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           {/* On passe darkMode et toggleDarkmode à chaque Layout */}
-          <Route 
-            path="/" 
+
+          <Route
+            path="/"
             element={
               <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
-                <Accueil />
+                 <Accueil darkMode={darkMode} />  {/* ← ajoute darkMode ici */}
+              </Layout>
+             }
+          />
+          
+         <Route 
+            path="/competence" 
+            element={
+              <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
+                <Competences />
               </Layout>
             } 
           />
+
+
           <Route 
             path="/competence" 
             element={

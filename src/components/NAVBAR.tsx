@@ -14,7 +14,7 @@ interface NavItem {
   href: string;
 }
 
-const NAVBAR = ({ darkMode, toggleDarkmode }: NavbarProps) => {
+const NAVBAR = ({ darkMode = false,  toggleDarkmode }: NavbarProps) => {
   const [activeSection, setActiveSection] = useState('Home');
 
   // Définir les items de navigation
