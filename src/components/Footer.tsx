@@ -39,7 +39,9 @@ export const Footer = ({ darkMode }: FooterProps) => {
             <Github className="w-4 h-4" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/naadjath-seibou"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="w-9 h-9 rounded-lg flex items-center justify-center text-pink-500 hover:scale-110 transition-transform"
             style={{ background: darkMode ? 'rgba(255,255,255,0.05)' : 'rgba(236,72,153,0.08)' }}

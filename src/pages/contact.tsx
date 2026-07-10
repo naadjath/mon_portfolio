@@ -112,7 +112,7 @@ const Contact = ({ darkMode }: ContactProps) => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/naadjath-seibou"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
