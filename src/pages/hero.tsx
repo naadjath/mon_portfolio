@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import HeroIllustration from '../components/HeroIllustration'
 // import heroPng from "../assets/hero-girl.png"; // ← décommente quand tu as ta photo
 
@@ -125,9 +126,9 @@ const Hero = ({ darkMode }: HeroProps) => {
               Mon CV
             </a>
 
-            {/* Contact Me — outline */}
-            <a
-              href="#contact"
+            {/* Me contacter — outline */}
+            <Link
+              to="/contact"
               className="flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold
                          border-2 border-pink-500 text-pink-500
                          hover:bg-pink-500 hover:text-white
@@ -136,8 +137,8 @@ const Hero = ({ darkMode }: HeroProps) => {
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              Contact Me
-            </a>
+              Me contacter
+            </Link>
           </div>
         </div>
 
