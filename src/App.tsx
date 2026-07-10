@@ -9,6 +9,7 @@ import Competences from './pages/competence';
 import Realisation from './pages/realisation';
 import SoftSkill from './pages/softSkill';
 import Contact from './pages/contact';
+import NotFound from './pages/NotFound';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -72,6 +73,14 @@ const App = () => {
             element={
               <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
                 <Contact darkMode={darkMode} />
+              </Layout>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
+                <NotFound darkMode={darkMode} />
               </Layout>
             }
           />
