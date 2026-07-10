@@ -113,8 +113,8 @@ const Hero = ({ darkMode }: HeroProps) => {
           <div className="flex flex-wrap gap-4">
             {/* Mon CV — filled rose */}
             <a
-              href="/cv.pdf"
-              download
+              href="/CV_Alternance_2026.pdf"
+              download="CV_Naadjath_Seibou.pdf"
               className="flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold text-white
                          bg-gradient-to-r from-pink-500 to-fuchsia-500
                          shadow-sm hover:scale-105 active:scale-95 transition-all duration-200"
