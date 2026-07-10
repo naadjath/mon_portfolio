@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-// import heroPng from "../assets/hero-girl.png"; // ← décommente quand tu as ton image
+import HeroIllustration from '../components/HeroIllustration'
+// import heroPng from "../assets/hero-girl.png"; // ← décommente quand tu as ta photo
 
 interface HeroProps {
   darkMode?: boolean
@@ -56,33 +57,18 @@ const Hero = ({ darkMode }: HeroProps) => {
     },
   ]
 
-  const floatingBadges = [
-    { id: "ai",    symbol: "Ai", bg: "#f97316", top: "10%",    right: "4%",   size: 56, delay: "0s",    bold: true  },
-    { id: "react", symbol: "⚛️", bg: "#0ea5e9", top: "4%",     right: "20%",  size: 44, delay: "0.3s",  bold: false },
-    { id: "pr",    symbol: "Pr", bg: "#7c3aed", bottom: "16%", right: "6%",   size: 56, delay: "0.15s", bold: true  },
-    { id: "figma", symbol: "🎨", bg: "#a855f7", top: "44%",    right: "-1%",  size: 44, delay: "0.7s",  bold: false },
-    { id: "ts",    symbol: "TS", bg: "#2563eb", bottom: "30%", left: "0%",    size: 50, delay: "0.5s",  bold: true  },
-    { id: "node",  symbol: "🟢", bg: "#22c55e", top: "28%",    left: "2%",    size: 42, delay: "0.9s",  bold: false },
-  ]
-
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden transition-colors duration-500"
       style={{
-        background: darkMode
-          ? '#0b0f1a'
-          : 'linear-gradient(135deg, #fff0f6 0%, #ffffff 50%, #fce7f3 100%)',
+        background: darkMode ? '#0a0a0a' : '#ffffff',
       }}
     >
-      {/* Ambiance lumineuse */}
+      {/* Ambiance lumineuse — une seule touche de rose, discrète */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div
-          className="absolute top-1/4 -left-20 w-[600px] h-[600px] rounded-full blur-[130px]"
-          style={{ background: darkMode ? 'rgba(236,72,153,0.08)' : 'rgba(236,72,153,0.12)' }}
-        />
-        <div
-          className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full blur-[120px]"
-          style={{ background: darkMode ? 'rgba(217,70,239,0.08)' : 'rgba(217,70,239,0.10)' }}
+          className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full blur-[140px]"
+          style={{ background: darkMode ? 'rgba(236,72,153,0.06)' : 'rgba(236,72,153,0.07)' }}
         />
       </div>
 
@@ -103,8 +89,7 @@ const Hero = ({ darkMode }: HeroProps) => {
                 aria-label={label}
                 style={{ color, background: bg }}
                 className="w-11 h-11 flex items-center justify-center rounded-xl
-                           border border-pink-200/30 hover:scale-110
-                           transition-all duration-200"
+                           border hover:scale-110 transition-all duration-200"
               >
                 {icon}
               </a>
@@ -118,13 +103,13 @@ const Hero = ({ darkMode }: HeroProps) => {
           >
             Salut, je suis{" "}
             <span className="bg-gradient-to-r from-pink-500 via-fuchsia-500 to-rose-400 bg-clip-text text-transparent">
-              Naadj
+              Naadjath
             </span>
           </h1>
 
           {/* Rôle */}
           <p className="text-pink-500 text-xl font-semibold mb-5">
-            &lt; Développeuse Full Stack /&gt; 
+            Développeuse Full Stack — Junior
           </p>
 
           {/* Description */}
@@ -132,8 +117,9 @@ const Hero = ({ darkMode }: HeroProps) => {
             className="text-base leading-7 mb-10"
             style={{ color: darkMode ? '#9ca3af' : '#374151' }}
           >
-            Passionnée par la création d'interfaces élégantes et d'expériences numériques
-            mémorables. Du design au déploiement, je transforme tes idées en réalité. 
+            Je me forme au développement web full stack et je continue de me spécialiser.
+            J'aime aussi le design UX et la gestion de projet : au-delà du code, je cherche
+            à comprendre le produit dans son ensemble.
           </p>
 
           {/* Boutons CTA */}
@@ -177,79 +163,22 @@ const Hero = ({ darkMode }: HeroProps) => {
                       transition-all duration-700 delay-200
                       ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          {/* Halo rose */}
+          {/* Halo rose discret */}
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-64
-                          bg-pink-400/20 rounded-full blur-3xl" />
+                          bg-pink-400/10 rounded-full blur-3xl" />
 
-          {/* PLACEHOLDER image — remplace par <img src={heroPng} ... /> quand tu as ton PNG */}
-          <div
-            className="relative z-10 w-72 md:w-[340px] h-[420px] md:h-[520px]
-                       rounded-3xl border-2 border-dashed border-pink-400/30
-                       flex flex-col items-center justify-center gap-4 text-center px-8
-                       transition-colors duration-500"
-            style={{
-              background: darkMode
-                ? 'rgba(236,72,153,0.04)'
-                : 'rgba(236,72,153,0.06)',
-            }}
-          >
-            <span className="text-8xl select-none">👩🏽‍💻</span>
-            <p className="text-pink-500 text-sm font-semibold">Place ton image ici</p>
-            <code
-              className="text-xs px-3 py-1 rounded-lg"
-              style={{
-                color: darkMode ? '#6b7280' : '#9ca3af',
-                background: darkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)',
-              }}
-            >
-              src/assets/hero-girl.png
-            </code>
-          </div>
+          {/* Illustration SVG (remplaçable par ta photo plus tard) */}
+          <HeroIllustration darkMode={darkMode} />
           {/*
-            Quand tu as l'image, remplace le div ci-dessus par :
+            Quand tu as ta photo, remplace <HeroIllustration ... /> par :
             <img
               src={heroPng}
-              alt="Naadj"
+              alt="Naadjath"
               className="relative z-10 w-72 md:w-[360px] object-contain object-bottom
                          drop-shadow-[0_0_50px_rgba(236,72,153,0.25)] animate-float"
             />
           */}
 
-          {/* Bulle Hi! */}
-          <div
-            className="absolute z-20 top-[6%] left-[44%]
-                       w-16 h-16 rounded-full bg-pink-500
-                       flex items-center justify-center
-                       text-white font-black text-lg
-                       shadow-lg shadow-pink-500/50 animate-bounce"
-            style={{ animationDuration: "2s" }}
-          >
-            Hi!
-          </div>
-
-          {/* Badges tech flottants */}
-          {floatingBadges.map(({ id, symbol, bg, top, right, bottom, left, size, delay, bold }) => (
-            <div
-              key={id}
-              className="absolute z-20 flex items-center justify-center text-white rounded-2xl shadow-xl animate-[float_4s_ease-in-out_infinite]"
-              style={{
-                background: bg,
-                top, right, bottom, left,
-                width: size,
-                height: size,
-                fontSize: size >= 50 ? 20 : 16,
-                fontWeight: bold ? 800 : 400,
-                animationDelay: delay,
-                boxShadow: `0 8px 24px ${bg}55`,
-              }}
-            >
-              {symbol}
-            </div>
-          ))}
-
-          {/* Points déco */}
-          <div className="absolute bottom-10 left-[58%] w-2 h-2 bg-pink-400 rounded-full animate-ping opacity-50" />
-          <div className="absolute top-1/3 right-[4%] w-1.5 h-1.5 bg-fuchsia-400 rounded-full animate-pulse" />
         </div>
       </div>
 

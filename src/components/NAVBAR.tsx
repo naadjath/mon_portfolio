@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
 
 // ===== TYPES TYPESCRIPT =====
@@ -15,7 +14,8 @@ interface NavItem {
 }
 
 const NAVBAR = ({ darkMode = false,  toggleDarkmode }: NavbarProps) => {
-  const [activeSection, setActiveSection] = useState('Home');
+  const location = useLocation();
+  const navigate = useNavigate();
 
   // Définir les items de navigation
   const navItems: NavItem[] = [
@@ -46,10 +46,6 @@ const NAVBAR = ({ darkMode = false,  toggleDarkmode }: NavbarProps) => {
 
   const colors = darkMode ? darkColors : lightColors;
 
-  const handleNavClick = (itemName: string) => {
-    setActiveSection(itemName);
-  };
-
   return (
     <div className="flex justify-center w-full fixed top-4 z-50 px-4">
       <motion.nav
@@ -72,12 +68,11 @@ const NAVBAR = ({ darkMode = false,  toggleDarkmode }: NavbarProps) => {
               <Link
                 key={item.name}
                 to={item.href}
-                onClick={() => handleNavClick(item.name)}
                 className="relative"
               >
                 <motion.span
                   className={`font-medium transition-colors duration-300 ${
-                    activeSection === item.name
+                    location.pathname === item.href
                       ? colors.textActive
                       : colors.textSecondary
                   } hover:${colors.textActive}`}
@@ -86,9 +81,9 @@ const NAVBAR = ({ darkMode = false,  toggleDarkmode }: NavbarProps) => {
                 >
                   {item.name}
                 </motion.span>
-                
+
                 {/* Barre de soulignement pour l'élément actif */}
-                {activeSection === item.name && (
+                {location.pathname === item.href && (
                   <motion.div
                     layoutId="activeSection"
                     className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r ${
@@ -120,6 +115,7 @@ const NAVBAR = ({ darkMode = false,  toggleDarkmode }: NavbarProps) => {
 
             {/* Bouton Hire Me */}
             <motion.button
+              onClick={() => navigate('/contact')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`${colors.buttonBg} text-white px-6 py-2 rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow`}

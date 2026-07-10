@@ -30,7 +30,7 @@ const Layout = ({ children, darkMode, toggleDarkmode }: LayoutProps) => {
       {/* ===== FOOTER ===== */}
       {/* Le footer s'affiche sur toutes les pages */}
       
-      <Footer />
+      <Footer darkMode={darkMode} />
     </>
   );
 };

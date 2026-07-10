@@ -11,7 +11,7 @@ import SoftSkill from './pages/softSkill';
 import Contact from './pages/contact';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -19,7 +19,7 @@ const App = () => {
       once: false,
       offset: 100
     });
-    document.documentElement.classList.add('dark');
+    document.documentElement.classList.remove('dark');
   }, []);
 
   const toggleDarkmode = () => {
@@ -29,11 +29,7 @@ const App = () => {
   };
 
   return (
-    <div className={
-      darkMode
-        ? 'bg-gradient-to-br from-gray-900 via-[#0d182e] to-gray-900 min-h-screen'
-        : 'bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen'
-    }>
+    <div className={darkMode ? 'bg-[#0a0a0a] min-h-screen' : 'bg-white min-h-screen'}>
       <BrowserRouter>
         <Routes>
           {/* On passe darkMode et toggleDarkmode à chaque Layout */}
@@ -47,47 +43,37 @@ const App = () => {
              }
           />
           
-         <Route 
-            path="/competence" 
+         <Route
+            path="/competence"
             element={
               <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
-                <Competences />
+                <Competences darkMode={darkMode} />
               </Layout>
-            } 
+            }
           />
-
-
-          <Route 
-            path="/competence" 
+          <Route
+            path="/realisation"
             element={
               <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
-                <Competences />
+                <Realisation darkMode={darkMode} />
               </Layout>
-            } 
+            }
           />
-          <Route 
-            path="/realisation" 
+          <Route
+            path="/softSkill"
             element={
               <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
-                <Realisation />
+                <SoftSkill darkMode={darkMode} />
               </Layout>
-            } 
+            }
           />
-          <Route 
-            path="/softSkill" 
+          <Route
+            path="/contact"
             element={
               <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
-                <SoftSkill />
+                <Contact darkMode={darkMode} />
               </Layout>
-            } 
-          />
-          <Route 
-            path="/contact" 
-            element={
-              <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
-                <Contact />
-              </Layout>
-            } 
+            }
           />
         </Routes>
       </BrowserRouter>
