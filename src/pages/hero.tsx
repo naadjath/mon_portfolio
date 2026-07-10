@@ -76,7 +76,7 @@ const Hero = ({ darkMode }: HeroProps) => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto w-full px-8 md:px-16 flex flex-col-reverse md:flex-row
+      <div className="max-w-7xl mx-auto w-full px-8 md:px-16 flex flex-col md:flex-row
                       items-center justify-between gap-10 pt-28 pb-16 min-h-screen">
 
         {/* ══ GAUCHE : texte ══ */}
