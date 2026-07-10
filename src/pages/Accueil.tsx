@@ -1,5 +1,5 @@
 import Hero from './hero'
-import { Search, PenTool, Code2, Rocket } from 'lucide-react'
+import { Search, PenTool, Code2, CheckCircle2 } from 'lucide-react'
 
 interface AccueilProps {
   darkMode?: boolean
@@ -30,7 +30,7 @@ const steps: Step[] = [
   {
     title: 'Livraison',
     description: 'Je teste, je mets en ligne et je reste attentive aux retours pour améliorer.',
-    icon: <Rocket className="w-6 h-6" />,
+    icon: <CheckCircle2 className="w-6 h-6" />,
   },
 ]
 

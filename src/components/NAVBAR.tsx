@@ -156,7 +156,8 @@ const NAVBAR = ({ darkMode = false, toggleDarkmode }: NavbarProps) => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className={`lg:hidden absolute top-full left-0 right-0 mt-3 ${colors.navBg} backdrop-blur-lg rounded-3xl shadow-xl border border-gray-200/20 p-3`}
+              style={{ background: darkMode ? '#111827' : '#ffffff' }}
+              className="lg:hidden absolute top-full left-0 right-0 mt-3 rounded-3xl shadow-xl border border-gray-200/20 p-3"
             >
               <div className="flex flex-col">
                 {navItems.map((item) => (
