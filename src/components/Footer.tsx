@@ -16,12 +16,12 @@ export const Footer = ({ darkMode }: FooterProps) => {
       <div className="max-w-6xl mx-auto px-6 md:px-16 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Logo */}
         <span className="text-xl font-bold" style={{ color: darkMode ? '#ffffff' : '#111111' }}>
-          Portfolio<span className="text-pink-500">.</span>
+          SEIBOU Naadjath<span className="text-pink-500">.</span>
         </span>
 
         {/* Copyright */}
         <p className="text-sm text-center inline-flex items-center gap-1.5" style={{ color: darkMode ? '#9ca3af' : '#6b7280' }}>
-          &copy; 2025 — Fait avec
+          &copy; 2025 · Fait avec
           <Heart className="w-4 h-4 text-pink-500 fill-pink-500" />
           par Naadjath
         </p>
