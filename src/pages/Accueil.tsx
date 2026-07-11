@@ -1,4 +1,5 @@
 import Hero from './hero'
+import Competences from './competence'
 import { Search, PenTool, Code2, CheckCircle2 } from 'lucide-react'
 
 interface AccueilProps {
@@ -38,6 +39,9 @@ const Accueil = ({ darkMode }: AccueilProps) => {
   return (
     <div>
       <Hero darkMode={darkMode} />
+
+      {/* ===== SECTION : COMPÉTENCES ===== */}
+      <Competences darkMode={darkMode} />
 
       {/* ===== SECTION : MON APPROCHE ===== */}
       <section
