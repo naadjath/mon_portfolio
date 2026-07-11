@@ -61,7 +61,7 @@ const pillars: Pillar[] = [
 const Competences = ({ darkMode }: CompetencesProps) => {
   return (
     <section
-      className="relative min-h-screen pt-32 pb-20 px-6 md:px-16 transition-colors duration-500"
+      className="relative pt-12 pb-20 px-6 md:px-16 transition-colors duration-500"
       style={{ background: darkMode ? '#0a0a0a' : '#ffffff' }}
     >
       {/* Halo déco discret */}
