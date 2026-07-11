@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 
 import Layout from './assets/Layouts/layout';
 import Accueil from './pages/Accueil';
-import Competences from './pages/competence';
 import Realisation from './pages/realisation';
 import SoftSkill from './pages/softSkill';
 import Contact from './pages/contact';
@@ -45,14 +44,6 @@ const App = () => {
           />
           
          <Route
-            path="/competence"
-            element={
-              <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
-                <Competences darkMode={darkMode} />
-              </Layout>
-            }
-          />
-          <Route
             path="/realisation"
             element={
               <Layout darkMode={darkMode} toggleDarkmode={toggleDarkmode}>
