@@ -66,7 +66,7 @@ const Accueil = ({ darkMode }: AccueilProps) => {
               className="mt-4 max-w-2xl mx-auto text-base"
               style={{ color: darkMode ? '#9ca3af' : '#374151' }}
             >
-              J'aime penser un projet de bout en bout — pas seulement le code. Voici les
+              J'aime penser un projet de bout en bout, pas seulement le code. Voici les
               étapes par lesquelles je passe.
             </p>
           </div>

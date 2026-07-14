@@ -19,7 +19,7 @@ const Contact = ({ darkMode }: ContactProps) => {
     e.preventDefault()
     // Branche ici un vrai service (EmailJS, Formspree, une API...) pour envoyer le message
     const subject = encodeURIComponent(`Message de ${form.name}`)
-    const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`)
+    const body = encodeURIComponent(`${form.message}\n\n${form.name} (${form.email})`)
     window.location.href = `mailto:naadjaths@gmail.com?subject=${subject}&body=${body}`
     setSent(true)
   }

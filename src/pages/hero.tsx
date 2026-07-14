@@ -47,7 +47,7 @@ const Hero = ({ darkMode }: HeroProps) => {
         background: darkMode ? '#0a0a0a' : '#ffffff',
       }}
     >
-      {/* Ambiance lumineuse — une seule touche de rose, discrète */}
+      {/* Ambiance lumineuse : une seule touche de rose, discrète */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div
           className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full blur-[140px]"
@@ -107,12 +107,12 @@ const Hero = ({ darkMode }: HeroProps) => {
           >
             Je me forme au développement web full stack et je continue de me spécialiser.
             Je m'intéresse aussi au design UX, à la gestion de projet, et je suis de plus en
-            plus attirée par l'IA — agents intelligents et automatisation.
+            plus attirée par l'IA : agents intelligents et automatisation.
           </p>
 
           {/* Boutons CTA */}
           <div className="flex flex-wrap gap-4">
-            {/* Mon CV — filled rose */}
+            {/* Mon CV (filled rose) */}
             <a
               href="/CV_Alternance_2026.pdf"
               download="CV_Naadjath_Seibou.pdf"
@@ -126,7 +126,7 @@ const Hero = ({ darkMode }: HeroProps) => {
               Mon CV
             </a>
 
-            {/* Me contacter — outline */}
+            {/* Me contacter (outline) */}
             <Link
               to="/contact"
               className="flex items-center gap-2.5 px-7 py-3.5 rounded-full font-bold
