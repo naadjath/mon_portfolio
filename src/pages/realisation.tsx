@@ -26,6 +26,13 @@ const projects: Project[] = [
     github: 'https://github.com/naadjath/mybien-api_backend',
   },
   {
+    title: 'Chatbot RAG',
+    description:
+      "Un assistant en Python qui répond à des questions à partir de documents, en combinant recherche sémantique (embeddings) et génération par IA. Il s'appuie uniquement sur les documents fournis, pour éviter les réponses inventées.",
+    role: "Projet personnel d'apprentissage IA, mené de A à Z : découpage des documents, embeddings et similarité cosinus codés à la main, puis génération des réponses via une API IA (Gemini).",
+    tags: ['Python', 'IA générative', 'RAG', 'API REST', 'Embeddings'],
+  },
+  {
     title: 'Desktops API',
     description:
       "API REST de gestion de postes de travail (opérations CRUD), documentée avec Swagger et accompagnée d'une interface front simple pour tester les endpoints.",
