@@ -106,8 +106,8 @@ const Hero = ({ darkMode }: HeroProps) => {
             style={{ color: darkMode ? '#9ca3af' : '#374151' }}
           >
             Je me forme au développement web full stack et je continue de me spécialiser.
-            J'aime aussi le design UX et la gestion de projet : au-delà du code, je cherche
-            à comprendre le produit dans son ensemble.
+            Je m'intéresse aussi au design UX, à la gestion de projet, et je suis de plus en
+            plus attirée par l'IA — agents intelligents et automatisation.
           </p>
 
           {/* Boutons CTA */}

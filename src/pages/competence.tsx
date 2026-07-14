@@ -1,4 +1,4 @@
-import { Code2, Palette, Kanban } from 'lucide-react'
+import { Code2, Palette, Kanban, Sparkles } from 'lucide-react'
 
 interface CompetencesProps {
   darkMode?: boolean
@@ -56,6 +56,18 @@ const pillars: Pillar[] = [
       'Travail en équipe',
     ],
   },
+  {
+    title: 'IA & Automatisation',
+    subtitle: 'Ce que j\'explore',
+    icon: <Sparkles className="w-6 h-6" />,
+    skills: [
+      'API IA / LLM (notions)',
+      'Agents IA',
+      'Prompt engineering',
+      'Automatisation',
+      'Python (en cours)',
+    ],
+  },
 ]
 
 const Competences = ({ darkMode }: CompetencesProps) => {
@@ -96,8 +108,8 @@ const Competences = ({ darkMode }: CompetencesProps) => {
           </p>
         </div>
 
-        {/* Grille des 3 pôles */}
-        <div className="grid gap-6 md:grid-cols-3">
+        {/* Grille des pôles */}
+        <div className="grid gap-6 sm:grid-cols-2">
           {pillars.map((pillar, i) => (
             <div
               key={pillar.title}
