@@ -97,7 +97,7 @@ const Hero = ({ darkMode }: HeroProps) => {
 
           {/* Rôle */}
           <p className="text-pink-500 text-xl font-semibold mb-5">
-            Développeuse Full Stack Junior
+            Chef de Projet IT &amp; Product Owner
           </p>
 
           {/* Description */}
@@ -105,9 +105,9 @@ const Hero = ({ darkMode }: HeroProps) => {
             className="text-base leading-7 mb-10"
             style={{ color: darkMode ? '#9ca3af' : '#374151' }}
           >
-            Je me forme au développement web full stack et je continue de me spécialiser.
-            Je m'intéresse aussi au design UX, à la gestion de projet, et je suis de plus en
-            plus attirée par l'IA : agents intelligents et automatisation.
+            Je me spécialise en gestion de projet informatique : cadrage, user stories,
+            pilotage Agile. Mon bagage de développeuse fullstack (React, Symfony, Python)
+            me permet de comprendre ce que je cadre, pas seulement de le documenter.
           </p>
 
           {/* Boutons CTA */}

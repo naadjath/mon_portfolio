@@ -13,8 +13,22 @@ interface Pillar {
 
 const pillars: Pillar[] = [
   {
+    title: 'Gestion de projet',
+    subtitle: 'Mon cœur de métier',
+    icon: <Kanban className="w-6 h-6" />,
+    skills: [
+      'Méthode Agile',
+      'User stories',
+      'Jira',
+      'Cadrage du besoin',
+      'Priorisation',
+      'Notion / Trello',
+      'Travail en équipe',
+    ],
+  },
+  {
     title: 'Développement',
-    subtitle: 'Ce que je pratique le plus',
+    subtitle: 'Mon socle technique',
     icon: <Code2 className="w-6 h-6" />,
     skills: [
       'React',
@@ -40,20 +54,6 @@ const pillars: Pillar[] = [
       'Parcours utilisateur',
       'Responsive design',
       'Accessibilité (bases)',
-    ],
-  },
-  {
-    title: 'Gestion de projet',
-    subtitle: 'Vue en cours, mise en pratique',
-    icon: <Kanban className="w-6 h-6" />,
-    skills: [
-      'Méthode Agile',
-      'User stories',
-      'Jira',
-      'Cadrage du besoin',
-      'Priorisation',
-      'Notion / Trello',
-      'Travail en équipe',
     ],
   },
   {
@@ -103,8 +103,9 @@ const Competences = ({ darkMode }: CompetencesProps) => {
             className="mt-4 max-w-2xl mx-auto text-base"
             style={{ color: darkMode ? '#9ca3af' : '#374151' }}
           >
-            Mon cœur de métier, c'est le développement. J'élargis progressivement vers le
-            design UX et la gestion de projet pour penser un produit dans son ensemble.
+            Je me spécialise en gestion de projet informatique. Mon socle de développeuse
+            fullstack me permet de comprendre ce que je cadre de l'intérieur, pas seulement
+            de le documenter.
           </p>
         </div>
 
