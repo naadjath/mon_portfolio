@@ -15,22 +15,22 @@ interface Step {
 const steps: Step[] = [
   {
     title: 'Cadrage',
-    description: "Je cherche à comprendre le besoin et l'objectif avant d'écrire la moindre ligne.",
+    description: "Je comprends le besoin, je définis les priorités et je cadre ce qui sera livré, avant toute décision technique.",
     icon: <Search className="w-6 h-6" />,
   },
   {
-    title: 'Design',
-    description: "Je réfléchis au parcours utilisateur et je maquette l'interface (souvent sur Figma).",
+    title: 'Conception',
+    description: "Je maquette le parcours utilisateur pour valider les choix avec les parties prenantes avant de développer quoi que ce soit.",
     icon: <PenTool className="w-6 h-6" />,
   },
   {
-    title: 'Développement',
-    description: 'Je construis l\'interface en React, en soignant le code et le responsive.',
+    title: 'Réalisation',
+    description: "Je développe moi-même, ce qui me permet de savoir précisément ce qu'une fonctionnalité coûte en temps et en complexité.",
     icon: <Code2 className="w-6 h-6" />,
   },
   {
-    title: 'Livraison',
-    description: 'Je teste, je mets en ligne et je reste attentive aux retours pour améliorer.',
+    title: 'Livraison & suivi',
+    description: 'Je teste, je mets en ligne et je reste attentive aux retours pour ajuster.',
     icon: <CheckCircle2 className="w-6 h-6" />,
   },
 ]
@@ -66,8 +66,8 @@ const Accueil = ({ darkMode }: AccueilProps) => {
               className="mt-4 max-w-2xl mx-auto text-base"
               style={{ color: darkMode ? '#9ca3af' : '#374151' }}
             >
-              J'aime penser un projet de bout en bout, pas seulement le code. Voici les
-              étapes par lesquelles je passe.
+              Je pense un projet de bout en bout : le code n'est qu'une étape, pas le
+              point de départ. Voici comment je procède.
             </p>
           </div>
 

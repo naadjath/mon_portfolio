@@ -33,7 +33,7 @@ const softSkills: Soft[] = [
   },
   {
     title: 'Rigueur',
-    description: "Je fais attention aux détails et à la qualité de mon code.",
+    description: "Je fais attention aux détails, à la qualité des livrables et au respect des délais.",
     icon: <Target className="w-6 h-6" />,
   },
   {

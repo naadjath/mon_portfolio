@@ -21,7 +21,7 @@ const projects: Project[] = [
     title: 'My Bien',
     description:
       "Application web de gestion immobilière : les propriétaires gèrent leurs biens, leurs locataires, leurs factures et leurs documents. Authentification JWT, génération de factures PDF, envoi automatique d'e-mails et tableaux de bord propriétaire/locataire.",
-    role: "Projet de fin de Bachelor mené seule, de A à Z : cadrage du besoin, conception, back-end Symfony (API sécurisée JWT, génération de factures PDF, e-mails) et front React.",
+    role: "J'ai cadré seule le besoin : quelles fonctionnalités prioriser pour un propriétaire (factures, documents, suivi locataire), et quelle architecture pour séparer proprement back et front. Puis j'ai développé l'ensemble : API Symfony sécurisée, génération de PDF, front React connecté.",
     tags: ['React', 'Symfony', 'MySQL', 'Docker', 'JWT', 'Tailwind'],
     github: 'https://github.com/naadjath/mybien-api_backend',
   },
@@ -29,7 +29,7 @@ const projects: Project[] = [
     title: 'Chatbot RAG',
     description:
       "Un assistant en Python qui répond à des questions à partir de documents, en combinant recherche sémantique (embeddings) et génération par IA. Il s'appuie uniquement sur les documents fournis, pour éviter les réponses inventées.",
-    role: "Projet personnel d'apprentissage IA, mené de A à Z : découpage des documents, embeddings et similarité cosinus codés à la main, puis génération des réponses via une API IA (Gemini).",
+    role: "Je voulais comprendre ce qui se passe réellement derrière un système RAG avant de le piloter un jour en tant que chef de projet IA. J'ai donc codé moi-même chaque étape (découpage, similarité, génération) plutôt que d'appeler une librairie toute faite.",
     tags: ['Python', 'IA générative', 'RAG', 'API REST', 'Embeddings'],
     github: 'https://github.com/naadjath/Chatbot-rag',
   },
@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: 'Desktops API',
     description:
       "API REST de gestion de postes de travail (opérations CRUD), documentée avec Swagger et accompagnée d'une interface front simple pour tester les endpoints.",
-    role: "Projet personnel d'apprentissage, réalisé seule pour maîtriser les étapes de création d'une API en Node.js : routes, controllers, middlewares et documentation Swagger.",
+    role: "Un projet pour structurer moi-même chaque étape d'une API : quelles routes exposer, comment répartir les responsabilités entre controllers et middlewares, et documenter proprement pour qu'une autre équipe puisse la reprendre.",
     tags: ['Node.js', 'Express', 'Swagger', 'JavaScript', 'API REST'],
     github: 'https://github.com/naadjath/desktops-api',
   },
@@ -45,7 +45,7 @@ const projects: Project[] = [
     title: 'Portfolio personnel',
     description:
       'Ce portfolio, conçu en React + TypeScript + Tailwind CSS avec dark mode, animations et design responsive.',
-    role: 'Conception des maquettes, développement du front et mise en ligne.',
+    role: "Cadrage de ma propre marque professionnelle : quel message porter en premier, quelle preuve technique garder, et comment le faire évoluer à chaque étape de ma recherche.",
     tags: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
     github: 'https://github.com/naadjath/mon_portfolio',
   },
@@ -82,8 +82,8 @@ const Realisation = ({ darkMode }: RealisationProps) => {
             className="mt-4 max-w-xl mx-auto text-base"
             style={{ color: darkMode ? '#9ca3af' : '#374151' }}
           >
-            Une sélection de projets sur lesquels j'ai travaillé. Chaque projet reflète ma
-            manière de penser l'interface et l'expérience utilisateur.
+            Une sélection de projets menés de bout en bout, du cadrage du besoin jusqu'à
+            la mise en production. Le code est la preuve, pas le sujet.
           </p>
         </div>
 
