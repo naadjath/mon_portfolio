@@ -23,7 +23,7 @@ const NAVBAR = ({ darkMode = false, toggleDarkmode }: NavbarProps) => {
   const navItems: NavItem[] = [
     { name: 'Accueil', href: '/' },
     { name: 'Réalisation', href: '/realisation' },
-    { name: 'Skills', href: '/softSkill' }
+    { name: 'Soft Skills', href: '/softSkill' }
   ];
 
   const lightColors = {

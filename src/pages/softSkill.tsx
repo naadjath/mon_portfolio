@@ -13,32 +13,32 @@ interface Soft {
 const softSkills: Soft[] = [
   {
     title: 'Travail en équipe',
-    description: "J'aime avancer avec les autres, et je n'hésite pas à demander de l'aide quand j'en ai besoin.",
+    description: "Chez Rintio, j'ai travaillé dans une équipe de 8 personnes, à la fois comme développeuse et comme assistante du chef de projet.",
     icon: <Users className="w-6 h-6" />,
   },
   {
-    title: 'Communication',
-    description: "J'essaie d'expliquer clairement mes choix et d'écouter les besoins.",
+    title: 'Cadrage du besoin',
+    description: "Je traduis un besoin en user stories claires, avec des critères d'acceptation, pour que toute l'équipe sache quoi livrer.",
     icon: <MessageCircle className="w-6 h-6" />,
   },
   {
     title: "Envie d'apprendre",
-    description: "Je me forme régulièrement et je suis curieuse des nouvelles technologies.",
+    description: "Je me suis formée seule à l'IA générative en codant un système RAG de A à Z, pour comprendre ce que je pourrai piloter.",
     icon: <Lightbulb className="w-6 h-6" />,
   },
   {
-    title: 'Organisation',
-    description: "Je planifie mes tâches pour avancer sereinement et tenir les délais.",
+    title: 'Suivi du backlog',
+    description: "Le chef de projet me déléguait le backlog et le tableau Jira : je les tenais à jour à partir de ses consignes.",
     icon: <Clock className="w-6 h-6" />,
   },
   {
-    title: 'Rigueur',
-    description: "Je fais attention aux détails, à la qualité des livrables et au respect des délais.",
+    title: 'Qualité des livrables',
+    description: "Je teste les fonctionnalités avant de les livrer et je garde un backlog propre, avec des tickets compris de tous.",
     icon: <Target className="w-6 h-6" />,
   },
   {
-    title: 'Motivation',
-    description: "Créer des choses utiles me motive, et j'ai vraiment envie de progresser.",
+    title: "Prise d'initiative",
+    description: "J'ai cadré seule MyBien, de l'analyse du besoin jusqu'à la mise en ligne, sans attendre qu'on me dise quoi faire.",
     icon: <Heart className="w-6 h-6" />,
   },
 ]
@@ -74,8 +74,8 @@ const SoftSkill = ({ darkMode }: SoftSkillProps) => {
             className="mt-4 max-w-xl mx-auto text-base"
             style={{ color: darkMode ? '#9ca3af' : '#374151' }}
           >
-            Les qualités humaines qui font de moi une bonne alternante et une bonne
-            coéquipière au quotidien.
+            Ce que j'ai déjà mis en pratique en équipe et sur mes projets, et ce que
+            j'apporterai en alternance.
           </p>
         </div>
 

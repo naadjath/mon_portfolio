@@ -32,7 +32,7 @@ const Contact = ({ darkMode }: ContactProps) => {
 
   const infos = [
     { icon: <Mail className="w-5 h-5" />, label: 'Email', value: 'naadjaths@gmail.com' },
-    { icon: <MapPin className="w-5 h-5" />, label: 'Localisation', value: 'France' },
+    { icon: <MapPin className="w-5 h-5" />, label: 'Localisation', value: 'Sceaux (92), Île-de-France' },
   ]
 
   return (

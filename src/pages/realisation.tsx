@@ -51,6 +51,19 @@ const projects: Project[] = [
   },
 ]
 
+const experienceRintio = {
+  title: 'Assistante Chef de Projet & Développeuse Front-End',
+  company: 'Rintio · Cotonou, Bénin',
+  period: 'nov. 2024 - mai 2025',
+  missions: [
+    "Assistance du chef de projet au sein d'une équipe de 8 personnes : suivi de l'avancement des sprints et remontée des points de blocage",
+    'Gestion du backlog et du tableau Jira par délégation du chef de projet : création, qualification et priorisation des tickets',
+    "Recueil des besoins et rédaction des user stories avec critères d'acceptation, préparation des cérémonies Agile (sprint planning, daily, rétrospectives)",
+    "Recette fonctionnelle des livrables avant mise en production, développement de composants React/TypeScript et intégration d'API REST",
+  ],
+  tags: ['Jira', 'Agile', 'User stories', 'Backlog', 'Recette', 'React', 'TypeScript'],
+}
+
 const Realisation = ({ darkMode }: RealisationProps) => {
   return (
     <section
@@ -87,6 +100,53 @@ const Realisation = ({ darkMode }: RealisationProps) => {
           </p>
         </div>
 
+        {/* Expérience */}
+        <div className="mb-16" data-aos="fade-up">
+          <p className="text-pink-500 font-semibold tracking-widest uppercase text-sm mb-4 text-center">
+            Expérience
+          </p>
+          <article
+            className="rounded-2xl border p-7 max-w-3xl mx-auto"
+            style={{
+              background: darkMode ? 'rgba(255,255,255,0.03)' : '#ffffff',
+              borderColor: darkMode ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)',
+              boxShadow: darkMode ? '0 10px 34px rgba(0,0,0,0.35)' : '0 10px 34px rgba(0,0,0,0.06)',
+            }}
+          >
+            <div className="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+              <h3 className="text-lg font-bold" style={{ color: darkMode ? '#ffffff' : '#111111' }}>
+                {experienceRintio.title}
+              </h3>
+              <span className="text-sm" style={{ color: darkMode ? '#9ca3af' : '#4b5563' }}>
+                {experienceRintio.period}
+              </span>
+            </div>
+            <p className="text-sm font-semibold text-pink-500 mb-4">{experienceRintio.company}</p>
+            <ul
+              className="list-disc pl-5 space-y-2 text-sm leading-6 mb-5"
+              style={{ color: darkMode ? '#d1d5db' : '#374151' }}
+            >
+              {experienceRintio.missions.map((m) => (
+                <li key={m}>{m}</li>
+              ))}
+            </ul>
+            <div className="flex flex-wrap gap-2">
+              {experienceRintio.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs font-medium px-2.5 py-1 rounded-full text-pink-500"
+                  style={{ background: darkMode ? 'rgba(236,72,153,0.12)' : 'rgba(236,72,153,0.10)' }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </article>
+        </div>
+
+        <p className="text-pink-500 font-semibold tracking-widest uppercase text-sm mb-6 text-center">
+          Projets
+        </p>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
             <article
